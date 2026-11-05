@@ -1,1 +1,38 @@
+#Navbar {
+  position: sticky;
+  margin: 0px;
+  padding: 0px;
+  text-align: center;
+  background-color: #921e20;
+  gap: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+#Navbar #nb-buttons {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  gap: 1em;
+}
+
+#Navbar button {
+  background-color: transparent;
+  border: none;
+  text-decoration: underline #921e20;
+}
+
+#Navbar button:hover {
+  animation: underline;
+  animation-duration: 0.5s;
+}
+
+@keyframes underline {
+  from {
+    text-decoration: underline #921e20;
+  }
+  to {
+    text-decoration: underline #000000;
+  }
+}
